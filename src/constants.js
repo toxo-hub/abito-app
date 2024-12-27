@@ -56,3 +56,27 @@ export const productsList = [
         url: deployPrefix + 'product.html'
     }
 ]
+
+export const servicesList = [
+    {
+        id: 1,
+        code: 'delivary',
+        img: '/images/track.svg',
+        title: 'Доставка',
+        text: 'Проверка при получении и возможность бесплатно вернуть товар'
+    },
+    {
+        id: 2,
+        code: 'auto',
+        img: '/images/sedan.svg',
+        title: 'Автотека',
+        text: 'Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах'
+    },
+    {
+        id: 3,
+        code: 'online',
+        img: '/images/love.svg',
+        title: 'Онлайн-бронирование жилья',
+        text: 'Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России'
+    }
+]
