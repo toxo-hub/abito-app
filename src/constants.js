@@ -1,4 +1,4 @@
-const deployPrefix = '/abito/';
+export const deployPrefix = '/';
 
 export const productsList = [
     {
@@ -8,7 +8,8 @@ export const productsList = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        url: deployPrefix + 'product.html'
+        url: deployPrefix + 'product/0',
+        description: 'Продаю не спеша самокат в хорошем состоянии.'
     },
     {
         id: 1,
@@ -17,7 +18,8 @@ export const productsList = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        url: deployPrefix + 'product.html'
+        url: deployPrefix + 'product/1',
+        description: 'Торг возможен.'
     },
     {
         id: 2,
@@ -26,7 +28,8 @@ export const productsList = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        url: deployPrefix + 'product.html'
+        url: deployPrefix + 'product/2',
+        description: 'За период эксплуатации не выявлено ни одной проблемы.'
     },
     {
         id: 3,
@@ -35,7 +38,8 @@ export const productsList = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        url: deployPrefix + 'product.html'
+        url: deployPrefix + 'product/3',
+        description: 'Из минусов — нужно прокачать задний тормоз.'
     },
     {
         id: 4,
@@ -44,7 +48,8 @@ export const productsList = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        url: deployPrefix + 'product.html'
+        url: deployPrefix + 'product/4',
+        description: 'Покрышки CST внедорожные.'
     },
     {
         id: 5,
@@ -53,7 +58,8 @@ export const productsList = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        url: deployPrefix + 'product.html'
+        url: deployPrefix + 'product/5',
+        description: 'Установлен отсекатель сзади.'
     }
 ]
 
