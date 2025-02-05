@@ -9,12 +9,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Layout } from './Layouts/Layout';
+import { ErrorPage } from './pages/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
         path: '/product/:id',
         element: <Product />,
       }
-    ]
+    ],
   },
 ]);
 
