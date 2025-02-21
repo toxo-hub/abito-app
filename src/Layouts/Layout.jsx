@@ -11,9 +11,17 @@ export const Layout = () => {
         setSearchText(event.target.value)
     }
 
-    const handleSearchBtn = () => {
+    const handleSearchBtn = () => findProducts();
+    const handleSearchEnter = (event) => {
+            if (event.key === 'Enter') {
+                findProducts()
+        }
+    }
+
+    const findProducts = () => {
         setProducts(productsList.filter(product => product.title.toLowerCase().includes(searchText.toLowerCase()) || product.price.includes(searchText)))
     }
+    
 
     useEffect(() => {
         setProducts(productsList)
@@ -30,6 +38,7 @@ export const Layout = () => {
                             <input type="text"
                                    placeholder="Поиск по объявлениям" 
                                    onChange={handleSearch}
+                                   onKeyDown={handleSearchEnter}
                             />
                             <button className="btn btn-primary search-btn" onClick={handleSearchBtn}>
                                 <img className="search-btn__icon" src="/images/search.svg" alt="search" />
