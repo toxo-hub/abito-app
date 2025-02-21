@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   
-  div#root {
+  div#notFoundContainer {
     background-color: #19a39d;
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@ import  './NotFound.css';
 
 export const NotFound = () => {
     return (
-        <>
+        <div id="notFoundContainer">
             <div className="four"></div>
             <div className="sheep">
                 <div className="head">
@@ -13,6 +13,6 @@ export const NotFound = () => {
                 </div>
             </div>  
             <div className="four"></div>
-        </>
+        </div>
     )
 }
