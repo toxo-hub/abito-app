@@ -4,7 +4,7 @@ import { Service } from "../components/Service/Service";
 
 export const Product = () => {
   const { id } = useParams();
-  const {products} = useOutletContext();
+  const { products } = useOutletContext();
   const product = products.find((product) => product.id === +id);
 
   return (
