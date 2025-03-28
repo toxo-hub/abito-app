@@ -12,6 +12,7 @@ export const Layout = () => {
     }
 
     const handleSearchBtn = () => findProducts();
+   
     const handleSearchEnter = (event) => {
             if (event.key === 'Enter') {
                 findProducts()
