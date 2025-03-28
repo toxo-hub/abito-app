@@ -2,6 +2,7 @@ import { useOutletContext } from "react-router-dom";
 import { Card } from "../components/Card/Card";
 import { Service } from "../components/Service/Service";
 import { servicesList } from "../constants";
+import { Footer } from "../components/Footer/Footer";
 
 export const Home = () => {
   const {products} = useOutletContext();
@@ -40,17 +41,7 @@ export const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="content-side__footer">
-              <div className="content-side__footer-item">
-                © ООО «Абито», 2011–2021
-              </div>
-              <a href="#!" className="content-side__footer-item">
-                Политика конфиденциальности
-              </a>
-              <a href="#!" className="content-side__footer-item">
-                Обработка данных
-              </a>
-            </div>
+            <Footer/>
           </div>
         </div>
       </div>

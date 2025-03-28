@@ -1,6 +1,7 @@
 import { useOutletContext, useParams } from "react-router-dom";
 import { servicesList } from "../constants";
 import { Service } from "../components/Service/Service";
+import { Footer } from "../components/Footer/Footer";
 
 export const Product = () => {
   const { id } = useParams();
@@ -45,17 +46,7 @@ export const Product = () => {
                   ))}
                 </div>
               </div>
-              <div className="content-side__footer">
-                <div className="content-side__footer-item">
-                  © ООО «Абито», 2011–2021
-                </div>
-                <a href="#!" className="content-side__footer-item">
-                  Политика конфиденциальности
-                </a>
-                <a href="#!" className="content-side__footer-item">
-                  Обработка данных
-                </a>
-              </div>
+              <Footer/>
             </div>
           </div>
         ) : (
